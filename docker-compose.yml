@@ -1,10 +1,26 @@
 version: '3'
 
 services:
-   liberty-cluster:
+   liberty-clone1:
       build: .
       volumes:
-        - ./sample.war:/config/dropins
+        - ./apps:/config/dropins
       ports:
         - 9080:9080
         - 9443:9443
+
+   liberty-clone1:
+      build: .
+      volumes:
+        - ./apps:/config/dropins
+      ports:
+        - 9180:9080
+        - 9543:9443
+
+   liberty-clone1:
+      build: .
+      volumes:
+        - ./apps:/config/dropins
+      ports:
+        - 9280:9080
+        - 9643:9443
