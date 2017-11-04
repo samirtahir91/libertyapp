@@ -1,10 +1,11 @@
 pipeline {
-	agent none
-	stages {
-		stage('Run Liberty') {
-			steps {
-				sh 'docker-compose up'
-			}
-		}
-	}
+    agent { dockerfile true }
+    stages {
+        stage('Test') {
+            steps {
+                sh 'node --version'
+                sh 'svn --version'
+            }
+        }
+    }
 }
