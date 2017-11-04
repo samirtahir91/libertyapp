@@ -9,7 +9,7 @@ services:
         - 9080:9080
         - 9443:9443
 
-   liberty-clone1:
+   liberty-clone2:
       build: .
       volumes:
         - ./apps:/config/dropins
@@ -17,7 +17,7 @@ services:
         - 9180:9080
         - 9543:9443
 
-   liberty-clone1:
+   liberty-clone3:
       build: .
       volumes:
         - ./apps:/config/dropins
