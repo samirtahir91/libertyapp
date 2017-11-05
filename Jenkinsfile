@@ -1,11 +1,11 @@
 pipeline {
     agent {
-        docker 'node'
+        label 'master'
     }
     stages {
-        stage("testing 123") {
+        stage('testing 123') {
             steps {
-                sh 'node --version'
+                sh 'echo hello from master node'
             }
         }
     }
