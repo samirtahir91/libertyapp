@@ -1,11 +1,11 @@
-pipeline {
+peline {
     agent {
-        none
+        docker 'node'
     }
     stages {
-        stage('Test') {
+        stage("testing 123") {
             steps {
-                sh 'echo'
+                sh 'node --version'
             }
         }
     }
