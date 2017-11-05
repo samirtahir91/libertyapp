@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('testing 123') {
             steps {
-                sh 'echo hello from master node'
+                sh 'docker info'
             }
         }
     }
