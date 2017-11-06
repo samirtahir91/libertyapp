@@ -3,9 +3,9 @@ pipeline {
         label 'master'
     }
     stages {
-        stage('testing 123') {
+        stage('Liberty docker build') {
             steps {
-                sh 'docker info'
+                sh 'sudo docker-compose -d up'
             }
         }
     }
