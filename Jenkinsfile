@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Liberty docker build') {
             steps {
-                sh 'sudo docker-compose -d up'
+                sh 'sudo docker-compose up -d'
             }
         }
     }
