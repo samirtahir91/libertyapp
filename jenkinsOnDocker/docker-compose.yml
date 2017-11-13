@@ -3,5 +3,6 @@ version: '3'
 services:
    jenkins:
       build: .
+      volumes:
       ports:
         - 8070:8080

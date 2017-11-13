@@ -7,3 +7,5 @@ RUN apt-get update \
 RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
 
 USER jenkins
+COPY init.groovy /usr/share/jenkins/ref/init.groovy.d/custom.groovy
+
