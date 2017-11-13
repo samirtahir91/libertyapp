@@ -2,19 +2,19 @@ version: '2'
 
 services:
    liberty-clone1:
-      build: .
+      image: liberty
       ports:
         - 9080:9080
         - 9443:9443
 
    liberty-clone2:
-      build: .
+      image: liberty
       ports:
         - 9180:9080
         - 9543:9443
 
    liberty-clone3:
-      build: .
+      image: liberty
       ports:
         - 9280:9080
         - 9643:9443
