@@ -4,7 +4,7 @@ services:
    liberty-clone1:
       image: liberty
       volumes:
-        - /Users/a9886547/Documents/dockerimages/apps:/config/dropins
+        - apps:/config/dropins
       ports:
         - 9080:9080
         - 9443:9443
@@ -12,7 +12,7 @@ services:
    liberty-clone2:
       image: liberty
       volumes:
-        - /Users/a9886547/Documents/dockerimages/apps:/config/dropins
+        - apps:/config/dropins
       ports:
         - 9180:9080
         - 9543:9443
@@ -20,7 +20,7 @@ services:
    liberty-clone3:
       image: liberty
       volumes:
-        - /Users/a9886547/Documents/dockerimages/apps:/config/dropins
+        - apps:/config/dropins
       ports:
         - 9280:9080
         - 9643:9443
