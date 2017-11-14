@@ -1,0 +1,23 @@
+version: '2'
+services:
+  libertyLB:
+    scale: 1
+    lb_config:
+      port_rules:
+      - source_port: 80
+        target_port: 9080
+        service: liberty-clone1
+      port_rules:
+      - source_port: 80
+        target_port: 9180
+        service: liberty-clone2
+      port_rules:
+      - source_port: 80
+        target_port: 9280
+        service: liberty-clone3
+    health_check:
+      port: 42
+      interval: 2000
+      unhealthy_threshold: 3
+      healthy_threshold: 2
+      response_timeout: 2000
