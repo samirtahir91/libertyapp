@@ -1,2 +1,2 @@
 FROM websphere-liberty:webProfile7
-COPY conf /config
+COPY conf /config/dropins
