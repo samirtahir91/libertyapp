@@ -18,7 +18,9 @@ services:
       ports:
         - 9280:9080
         - 9643:9443
+
    libertyLB:
+      image: rancher/lb-service-haproxy:v0.7.9
       ports:
-        - 80
-        image: rancher/lb-service-haproxy:<version>
+        - 80:80
+

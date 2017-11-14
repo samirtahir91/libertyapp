@@ -7,11 +7,9 @@ services:
       - source_port: 80
         target_port: 9080
         service: liberty-clone1
-      port_rules:
       - source_port: 80
         target_port: 9180
         service: liberty-clone2
-      port_rules:
       - source_port: 80
         target_port: 9280
         service: liberty-clone3
