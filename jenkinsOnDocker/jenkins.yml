@@ -1,8 +1,8 @@
-version: '3'
+version: '3.1'
 
 services:
    jenkins:
-      build: .
+      image: jenkins_auto
       volumes:
         - /var/run/docker.sock:/var/run/docker.sock
         - /usr/local/bin/docker:/usr/local/bin/docker
@@ -13,7 +13,6 @@ services:
       secrets:
       - jenkins-user
       - jenkins-pass
- 
 secrets:
   jenkins-user:
     external: true
