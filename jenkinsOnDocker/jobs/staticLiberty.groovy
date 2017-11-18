@@ -1,7 +1,7 @@
 
 pipelineJob('liberty-docker-cluster') {
 
-  def repo = 'https://github.com/samirtahir91/libertyap.git'
+  def repo = 'https://github.com/samirtahir91/libertyapp.git'
 
   triggers {
     scm('H/15 * * * *')
