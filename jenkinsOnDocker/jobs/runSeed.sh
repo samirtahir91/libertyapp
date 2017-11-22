@@ -1,12 +1,15 @@
 #!/bin/bash
 
-jenkins="down"
+runSeed() {
+curl -X POST http://admin:admin@192.168.99.100:8080/job/seedjob/build 2>jenkinsStatus
+}
 
-while [[ ${jenkins} == "down" ]]
+runSeed
+
+while [[ $(cat jenkinsStatus) != "" ]]
 do
-	 if [[ $(curl -X POST http://admin:admin@192.168.99.100:8080/job/seedjob/build) == "" ]]
-		then
-			echo "Seed job executed"
-			jenkins="up"
-	 fi
+	echo "running seed again, jenkins did not respond yet"
+	runSeed
 done
+echo
+echo "Jenkins seed job executed"
