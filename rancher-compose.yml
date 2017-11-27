@@ -10,9 +10,6 @@ services:
       - source_port: 80
         target_port: 9180
         service: liberty-clone2
-      - source_port: 80
-        target_port: 9280
-        service: liberty-clone3
     health_check:
       port: 42
       interval: 2000

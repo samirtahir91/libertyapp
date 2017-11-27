@@ -13,12 +13,6 @@ services:
         - 9180:9080
         - 9543:9443
 
-   liberty-clone3:
-      image: liberty
-      ports:
-        - 9280:9080
-        - 9643:9443
-
    libertyLB:
       image: rancher/lb-service-haproxy:v0.7.9
       ports:
