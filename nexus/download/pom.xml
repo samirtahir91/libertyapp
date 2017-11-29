@@ -1,9 +1,0 @@
-<project test>
-  <repositories>
-    <repository>
-      <id>maven-group</id>
-      <url>http://0.0.0.0:8081/repository/maven-group/</url>
-    </repository>
-  </repositories>
-</project>
-

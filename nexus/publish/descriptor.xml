@@ -2,13 +2,13 @@
 <formats>
    <format>war</format>
 </formats>
-<icludeBaseDirectory>false</includeBaseDirectory>
+<includeBaseDirectory>false</includeBaseDirectory>
 <fileSets>
    <fileSet>
       <directory>package</directory>
       <includes>
          <include>**/*</include>
-      <includes>
+      </includes>
    </fileSet>
 </fileSets>
 </assembly>
