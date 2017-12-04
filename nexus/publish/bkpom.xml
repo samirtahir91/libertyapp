@@ -8,9 +8,13 @@
     <packaging>pom</packaging>
   
 <distributionManagement>
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://0.0.0.0:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
     <repository>
       <id>nexus-releases</id>
-      <url>http://192.168.99.100:8081/repository/maven-releases/</url>
+      <url>http://0.0.0.0:8081/repository/maven-releases/</url>
     </repository>
   </distributionManagement>
 
