@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Liberty docker build') {
             steps {
-		sh 'rancher-compose --url http://192.168.99.100:8060 --access-key EA265161B9DDA77565CF --secret-key GqVRTLLyVN38UKyiZFF2GNUHYBGgKGAkSNvApPNk down;sudo docker build -t liberty . ;rancher-compose --url http://192.168.99.100:8060 --access-key EA265161B9DDA77565CF --secret-key GqVRTLLyVN38UKyiZFF2GNUHYBGgKGAkSNvApPNk up -d'
+		sh 'rancher-compose --url http://192.168.99.100:8060 --access-key 6904917D4BD09C771EC6 --secret-key bvFD2HhyfoUhnakNnFJUfYxyBFPKHquBFxRyr56A  down;sudo docker build -t liberty . ;rancher-compose --url http://192.168.99.100:8060 --access-key 6904917D4BD09C771EC6 --secret-key bvFD2HhyfoUhnakNnFJUfYxyBFPKHquBFxRyr56A up -d'
             }
         }
     }

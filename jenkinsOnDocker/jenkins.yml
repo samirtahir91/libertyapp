@@ -6,9 +6,9 @@ services:
       volumes:
         - /var/run/docker.sock:/var/run/docker.sock
         - /usr/local/bin/docker:/usr/local/bin/docker
-        - /usr/local/bin/rancher-compose:/usr/local/bin/rancher-compose
+        - /Users/a9886547/Downloads/rancher-compose/rancher-compose-v0.12.5/rancher-compose:/usr/local/bin/rancher-compose
         - /Users/a9886547/apache-maven-3.5.2:/usr/apache-maven
-        - /usr/java/jre1.8.0_151:/usr/java/jre
+        - /Users/a9886547/Downloads/javaLinux/jre1.8.0_151:/usr/java/jre
       ports:
         - 8080:8080
       secrets:
